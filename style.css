@@ -1,0 +1,184 @@
+/* 
+font-family: 'Hind Guntur', sans-serif; ---> HEADING
+font-family: 'Cormorant Infant', serif; ---> SMALL HEADINGH
+font-family: 'ABeeZee', sans-serif; ---> PARAGRAPH
+"Josefin Sans"
+"Agbalumo"
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(237, 198, 146);
+}
+
+.menuScreen{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    position: absolute;
+    top: -120%;
+    background-color: rgba(138, 0, 148, 0.507);
+    backdrop-filter: blur(20px);
+    z-index: 99;
+}
+
+.menuScreen a{
+    text-decoration: none;
+    color: white;
+}
+
+.ri-close-line{
+    position: absolute;
+    top: 4vw;
+    right: 4vw;
+    font-size: 25px;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 7vw;
+    width: 100%;
+    height: 60px;
+}
+
+.nav-right{
+    display: flex;
+    align-items: center;
+    gap: 5vw;
+}
+
+.nav-left{
+    font-family: "Agbalumo";
+    font-size: 25px;
+}
+
+.nav-right a{
+    text-decoration: none;
+    color: black;
+    font-family: "Josefin Sans";
+    font-size: 20px;
+}
+
+.nav i{
+    display: none;
+}
+
+.hero{
+    padding: 120px 5vw;
+}
+
+.hero h1{
+    font-family: 'ABeeZee', sans-serif;
+    font-size: 7vw;
+}
+
+.hero span{
+    font-family: "Macondo Swash Caps";
+}
+
+.ri-shining-2-fill{
+    color: rgb(247, 107, 130);
+}
+
+.ri-heart-3-fill{
+    color: rgb(33, 119, 239);
+}
+
+.elem{
+    position: relative;
+    overflow: hidden;
+}
+.boundingelem{
+    transform: translateY(100%);
+    
+}
+
+.intro{
+    padding: 120px 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pic{
+    position: relative;
+    max-height: 500px;
+    max-width: 350px;
+    min-height: 200px;
+    min-width: 135px;
+    height: 57vw;
+    width: 40vw;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.pic img{
+    position: absolute;
+    width: 120%;
+    left: -15px;
+}
+
+.intro-info{
+    width: 50%;
+}
+
+.intro p{
+    text-align: right;
+    font-family: 'ABeeZee', sans-serif;
+    font-size: 1.5vw;
+}
+
+.loading{
+    width: 100%;
+    position: absolute;
+    z-index: 9999;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width:700px) {
+    .hero{
+        padding: 40px 5vw;
+        padding-bottom: 0;
+    }
+    .intro{
+        padding: 40px 5vw;
+        flex-direction: column;
+        align-items: start;
+        gap: 20px;
+    }
+    .intro-info{
+        width: 100%;
+        padding: 0 10px;
+    }
+    .intro p{
+        text-align: left;
+        font-size: 4vw;
+    }
+    .nav-left h1{
+        font-size: 30px;
+    }
+}
+
+@media (max-width:600px) {
+    .nav-right{
+        display: none;
+    }
+    .nav i{
+        display: block;
+    }
+}
