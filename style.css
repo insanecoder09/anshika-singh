@@ -141,6 +141,7 @@ html,body{
 }
 
 .loading{
+    pointer-events: none;
     width: 100%;
     position: absolute;
     z-index: 9999;
