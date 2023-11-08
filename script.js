@@ -21,18 +21,17 @@ function firstPageAnimation(){
         tl.to('.boundingelem',{
             translateY: 0,
             ease: Expo.easeInOut,
-            duration: 3,
+            duration: 2,
             delay: -1,
             stagger: .5
         })
 
         tl.from('.pic',{
             opacity: 0,
-            translateY: -20,
+            translateY: -10,
             ease: Expo.easeInOut,
             duration: 4,
             delay: -3,
-            stagger: .5
         })
     },1500)
 } firstPageAnimation();
@@ -40,9 +39,6 @@ function firstPageAnimation(){
 menu.addEventListener('click', function(){
     gsap.to('.menuScreen',{
         top:0,
-        ease: Expo.easeInOut,
-        duration: 3,
-        delay: -1,
     })
 })
 
