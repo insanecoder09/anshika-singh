@@ -172,7 +172,8 @@ html,body{
     position: relative;
     overflow: hidden;
     width: 90%;
-    height: 350px;
+    height: 450px;
+    max-width: 350px;
     background-color: aqua;
     border-radius: 20px;
     box-shadow: 4px 4px 10px black;
@@ -180,8 +181,10 @@ html,body{
 
 .box img{
     height: 100%;
+    width: 200%;
     position: absolute;
     left: -70%;
+    object-fit: cover;
 }
 
 .box .details{
