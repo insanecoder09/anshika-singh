@@ -121,6 +121,7 @@ html,body{
     width: 40vw;
     overflow: hidden;
     border-radius: 20px;
+    box-shadow: 0 0 10px 1px black;
 }
 
 .pic img{
@@ -148,6 +149,75 @@ html,body{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.connect{
+    margin: 0 5vw;
+    width: fit-content;
+    border: 1px solid black;
+    border-radius: 100px;
+    outline: none;
+    padding: 8px 14px;
+    background-color: transparent;
+}
+
+.others{
+    padding: 70px 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box{
+    position: relative;
+    overflow: hidden;
+    width: 90%;
+    height: 350px;
+    background-color: aqua;
+    border-radius: 20px;
+    box-shadow: 4px 4px 10px black;
+}
+
+.box img{
+    height: 100%;
+    position: absolute;
+    left: -70%;
+}
+
+.box .details{
+    position: absolute;
+    z-index: 9999;
+    bottom: 0;
+    color: white;
+    margin-left: 10px;
+}
+
+.details h1{
+    font-family: "Josefin Sans";
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.details p{
+    font-family: 'ABeeZee', sans-serif;
+}
+.cir{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.see-project{
+    margin: 10px 0;
+    width: fit-content;
+    border: 1px solid white;
+    color: white;
+    border-radius: 100px;
+    outline: none;
+    padding: 8px 14px;
+    background-color: transparent;
 }
 
 @media (max-width:700px) {
